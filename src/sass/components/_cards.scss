@@ -22,7 +22,7 @@
     background-color: $color-blanco;
     border-radius: 1rem;
     padding: 1.5rem;
-    box-shadow: 0 0 1rem rgba(0,0,0,0.8);
+    @include sombra();
     display: flex;
     flex-direction: column;
     align-items: center;
