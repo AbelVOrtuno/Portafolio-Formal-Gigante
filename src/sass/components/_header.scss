@@ -1,0 +1,41 @@
+// Estilos para la cabecera //
+.header{
+    background-color: $color-primario;
+    color: $color-blanco;
+    width: 100%;
+    padding: $espacio-m 0;
+
+    &__contenido {
+        @include contenedor();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav {
+        display: flex;
+        gap: $espacio-m;
+        font-weight: 600;
+        color: $color-blanco;
+    }
+    &__link{
+        color: $color-blanco;
+        text-decoration: none;
+        transition: .2s ease;
+        &:hover{
+            opacity: .7;
+        }
+    }
+    // Mobile //
+    @include responsive(tablet){
+        &__contenido{
+            flex-direction: column;
+            text-align: center;
+            gap: $espacio-m;
+        }
+        &__nav{
+            flex-direction: column;
+            gap: $espacio-s;
+            text-align: center;
+        }
+    }
+}

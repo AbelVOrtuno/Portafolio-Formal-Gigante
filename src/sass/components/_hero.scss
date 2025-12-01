@@ -1,0 +1,28 @@
+.hero {
+    background-color: $color-secundario;
+    padding: $espacio-xl 0;
+    &__titulo{
+        text-align: center;
+        font-size: $fs-h1;
+        font-family: $fuente-principal;
+        color: $color-blanco;
+        margin-bottom: $espacio-s;
+    }
+    &__texto{
+        text-align: center;
+        font-size: $fs-p;
+        max-width: 600px;
+        margin: 0 auto $espacio-m;
+        color: $color-blanco;
+    }
+    &__btn{
+        @include boton-primario;
+        margin: 0 auto;
+        display: block;
+        width: max-content;
+        text-decoration: none;
+        &:hover{
+            background-color: $color-primario;
+        }
+    }
+} 

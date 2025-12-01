@@ -1,0 +1,5 @@
+# Ignorar cache de SASS
+.sass-cache/
+
+# Ignorar CSS compilado
+css/*.map

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+<!--El encabezado-->
     <header class="header">
         <div class="header__contenido">
             <h1 class="header__titulo">Landing Pro</h1>
@@ -18,17 +19,32 @@
             </nav>
         </div>
     </header>
-
+<!--La parte principal de nuestro sitio-->
     <section class="hero">
         <h2 class="hero__titulo">Soluciones para tu negocio</h2>
         <p class="hero__texto">Creamos experiencias web modernas,rapidas y funcionales.</p>
         <a href="#" class="hero__btn">Ver Mas</a>
     </section>
 
+<!--Seccion de tarjetas con imagenes-->
     <section class="cards">
-        <div class="card__item">Diseño Web</div>
-        <div class="card__item">Frontend moderno</div>
-        <div class="card__item">Optimizacion SEO</div>
+        <div class="cards__container">
+            <article class="card">
+                <img src="assets/img/icons/diseñoWeb.jpg" alt="Diseño web " class="card__img">
+                <h3 class="card__title">Diseño Web</h3>
+                <p class="card__text">Conoce las estrategias mas modernas,seguras y rapidas de diseño web del mercado</p>
+            </article>
+            <article class="card">
+                <img src="assets/img/icons/frontend.jpg" alt="Frontend " class="card__img">
+                <h3 class="card__title">Desarrollo Web Frontend </h3>
+                <p class="card__text">Descubre cuales son los lenguajes de programacion mas utilizados en la web.</p>
+            </article>
+            <article class="card">
+                <img src="assets/img/icons/SEO.jpg" alt="SEO" class="card__img">
+                <h3 class="card__title">Optimizacion del SEO</h3>
+                <p class="card__text">Conoce como destacar tu sitio de la competencia usando tecnicas avanzadas de SEO.</p>
+            </article>
+        </div>
     </section>
 </body>
 </html>
