@@ -1,0 +1,41 @@
+.cta{
+    text-align: center;
+    padding: $espacio-l;
+    &__title{
+        font-size: $fs-h2;
+        color: $color-blanco;
+        margin-bottom: $espacio-m;
+    }
+    &__text{
+        max-width: 600px;
+        margin: 0 auto $espacio-l auto;
+        color: $color-oscuro;
+        line-height: 1.6;
+    }
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $espacio-m;
+    }
+    .btn{
+        padding: .9rem 1.8rem;
+        border-radius: 8px;
+        font-weight: 600;
+        &:hover{
+            transform: scale(1.1);
+            transition: ease-in-out .5s;
+        }
+    }
+    .btn--primary{
+        background-color: $color-secundario;
+        color: $color-blanco;
+        text-decoration: none;
+    }
+    .btn--outline{
+        background-color: $color-claro;
+        border: 2px solid $color-primario;
+        color: $color-oscuro;
+        text-decoration: none;
+    }
+}
