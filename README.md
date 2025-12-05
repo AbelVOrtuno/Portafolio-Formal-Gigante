@@ -34,8 +34,6 @@ El enfoque principal: practica realista,creacion de un codigo limpio y reutiliza
 - Seccion Features
 - Footer completo
 
-
-
 ## Como compilar SASS
 
 Este proyecto usa SASS global, asi que solo necesitas:
