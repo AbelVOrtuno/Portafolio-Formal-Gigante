@@ -1,0 +1,50 @@
+// Mixins globales //
+
+// 1) Contenedor centrado y adaptable //
+@mixin contenedor($max-width: 1200px){
+    width: 90%;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+// 2) Media Queries profesionales //
+@mixin responsive($breakpoint){
+    @if $breakpoint == mobile {
+        @media (max-width: $mobile) {@content;}
+    }
+    @else if $breakpoint == tablet {
+        @media (max-width: $tablet) {@content;}
+    }
+    @else if $breakpoint == laptop {
+        @media (max-width: $laptop) {@content;}
+            
+    }
+    @else if $breakpoint == desktop {
+        @media (max-width: $desktop) {@content;}
+    }
+}
+// Botones //
+@mixin boton-primario {
+    display: inline-block;
+    padding: $espacio-s $espacio-m;
+    background-color: $color-primario;
+    color: $color-blanco;
+    border-radius: .5rem;
+    font-size: $fs-p;
+    font-weight: 600;
+    text-align: center;
+    transition: background .3s ease;
+
+    &:hover{
+        background-color: $color-secundario;
+    }
+}
+// Sombra profesional //
+@mixin sombra {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, .15);
+}
+// Grid simplificado //
+@mixin grid($cols, $gap: $espacio-m){
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    gap: $gap;
+}
